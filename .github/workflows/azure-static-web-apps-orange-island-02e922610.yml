@@ -13,8 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          # Temporary production pin: CIPP 10.8 exceeds Azure SWA's 15,000-file limit.
-          ref: 322e1a1a8da83605f800197703feae8fe34e9194
           submodules: true
           lfs: false
       - name: Build And Deploy
